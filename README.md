@@ -33,7 +33,7 @@ python yatube_api/manage.py runserver
 ```
 
 ## Примеры запросов к API:
-### url:```http://127.0.0.1:8000/api/v1/posts/```
+### url: http://127.0.0.1:8000/api/v1/posts/`
 #### GET запрос:
 ```json
 {
