@@ -52,10 +52,9 @@ python yatube_api/manage.py runserver
   ]
 }
 ```
-
+---
 #### POST запрос:
-
-|Входные данные:|
+Входные данные:
 ```json
 {
   "text": "string",
@@ -63,8 +62,8 @@ python yatube_api/manage.py runserver
   "group": 0
 }
 ```
-
-|Полученные данные:|
+---
+Полученные данные:
 ```json
 {
   "id": 0,
