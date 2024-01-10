@@ -1,15 +1,12 @@
-from rest_framework import filters
-from rest_framework import viewsets, mixins
-from rest_framework.permissions import (IsAuthenticatedOrReadOnly,
-                                        IsAuthenticated)
-
 from django.shortcuts import get_object_or_404
+from posts.models import Comment, Follow, Group, Post
+from rest_framework import filters, mixins, viewsets
+from rest_framework.permissions import (IsAuthenticated,
+                                        IsAuthenticatedOrReadOnly)
 
-from posts.models import Post, Comment, Group, Follow
-
-from .serializers import (PostSerializer, CommentSerializer,
-                          GroupSerializer, FollowSerializer)
 from .permissions import IsAuthorOrReadOnly
+from .serializers import (CommentSerializer, FollowSerializer, GroupSerializer,
+                          PostSerializer)
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
