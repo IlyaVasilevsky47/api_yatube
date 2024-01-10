@@ -1,56 +1,40 @@
-# api_final
-api final - программный интерфейс для блог-платформы yatube.
+# api_yatube
 
-### Как запустить проект:
+[![CI](https://github.com/IlyaVasilevsky47/yacut/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/IlyaVasilevsky47/yacut/actions/workflows/main.yml)
 
-Клонировать репозиторий и перейти в него в командной строке:
+API Yatube - это программный интерфейс, разработанный для блог-платформы [Yatube](https://github.com/IlyaVasilevsky47/yatube). Он предоставляет набор инструментов и протоколов для управления и доступа к контенту на платформе. С помощью API Yatube разработчики и пользователи могут создавать новые функции и приложения, улучшать взаимодействие с контентом и расширять возможности блог-платформы.
 
-```
-git clone git@github.com:IlyaVasilevsky47/api_final_yatube.git
-```
-
-```
-cd api_final_yatube
+## Запуск проекта:
+1. Клонируем проект.
+```bash
+git clone
 ```
 
-Cоздать и активировать виртуальное окружение:
-
-```
+2. Создаем и активируем виртуальное окружение.
+```bash
 python -m venv venv
-```
-
-```
 source venv/scripts/activate
 ```
 
-Установить зависимости из файла requirements.txt:
-
-```
+3. Обновляем менеджер пакетов pip и устанавливаем зависимости из файла requirements.txt.
+```bash
 python -m pip install --upgrade pip
-```
-
-```
 pip install -r requirements.txt
 ```
 
-Выполнить миграции:
-
-```
-python manage.py migrate
-```
-
-Запустить проект:
-
-```
-python manage.py runserver
+4. Создаем базу данных. 
+```bash
+python yatube/manage.py migrate 
 ```
 
-### Примеры запросов к API:
+5. Запускаем проект.
+```bash
+python yatube/manage.py runserver 
+```
 
-#### url: http://127.0.0.1:8000/api/v1/posts/
-
-##### GET запрос:
-
+## Примеры запросов к API:
+### url: http://127.0.0.1:8000/api/v1/posts/
+#### GET запрос:
 ```json
 {
   "count": 123,
@@ -69,8 +53,7 @@ python manage.py runserver
 }
 ```
 
-##### POST запрос:
-
+#### POST запрос:
 Входные данные:
 ```json
 {
@@ -91,3 +74,17 @@ python manage.py runserver
   "group": 0
 }
 ```
+
+## Автор:
+- Василевский И.А.
+- [GitHub](https://github.com/IlyaVasilevsky47)
+- [Почта](vasilevskijila047@gmail.com)
+- [Вконтакте](https://vk.com/ilya.vasilevskiy47)
+
+## Технический стек
+- Python 3.7.9
+- Django 3.2.16
+- Django REST Framework 3.12.4
+  - Simple JWT 4.7.2
+- PyJWT 2.1.0
+- Djoser 2.2.2
