@@ -1,6 +1,6 @@
 # api_yatube
 
-[![CI](https://github.com/IlyaVasilevsky47/yacut/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/IlyaVasilevsky47/yacut/actions/workflows/main.yml)
+[![CI](https://github.com/IlyaVasilevsky47/api_yatube/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/IlyaVasilevsky47/api_yatube/actions/workflows/main.yml)
 
 API Yatube - это программный интерфейс, разработанный для блог-платформы [Yatube](https://github.com/IlyaVasilevsky47/yatube). Он предоставляет набор инструментов и протоколов для управления и доступа к контенту на платформе. С помощью API Yatube разработчики и пользователи могут создавать новые функции и приложения, улучшать взаимодействие с контентом и расширять возможности блог-платформы.
 
@@ -54,7 +54,8 @@ python yatube_api/manage.py runserver
 ```
 
 #### POST запрос:
-Входные данные:
+
+|Входные данные:|
 ```json
 {
   "text": "string",
@@ -63,7 +64,7 @@ python yatube_api/manage.py runserver
 }
 ```
 
-Полученные данные:
+|Полученные данные:|
 ```json
 {
   "id": 0,
