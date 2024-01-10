@@ -52,7 +52,7 @@ python yatube_api/manage.py runserver
   ]
 }
 ```
-
+---
 #### POST запрос:
 Входные данные:
 ```json
