@@ -24,17 +24,17 @@ pip install -r requirements.txt
 
 4. Создаем базу данных. 
 ```bash
-python yatube/manage.py migrate 
+python yatube_api/manage.py migrate 
 ```
 
 5. Запускаем проект.
 ```bash
-python yatube/manage.py runserver 
+python yatube_api/manage.py runserver 
 ```
 
 ## Примеры запросов к API:
 ### url: http://127.0.0.1:8000/api/v1/posts/
-#### GET запрос:
+### GET запрос:
 ```json
 {
   "count": 123,
@@ -53,7 +53,7 @@ python yatube/manage.py runserver
 }
 ```
 
-#### POST запрос:
+### POST запрос:
 Входные данные:
 ```json
 {
@@ -62,7 +62,7 @@ python yatube/manage.py runserver
   "group": 0
 }
 ```
-
+``
 Полученные данные:
 ```json
 {
