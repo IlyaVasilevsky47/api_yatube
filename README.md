@@ -77,7 +77,7 @@ python yatube_api/manage.py runserver
   "group": 0
 }
 ```
----
+
 ## Документация:
 После запуска сервера, заходим в ReDoc по ссылке:
 ```url
