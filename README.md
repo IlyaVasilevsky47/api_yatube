@@ -62,7 +62,7 @@ python yatube_api/manage.py runserver
   "group": 0
 }
 ```
-``
+
 Полученные данные:
 ```json
 {
@@ -76,8 +76,10 @@ python yatube_api/manage.py runserver
 ```
 
 ## Документация:
-- [ReDoc](https://redocly.github.io/redoc/?url=https://github.com/IlyaVasilevsky47/api_yatube/blob/master/yatube_api/static/redoc.yaml#tag/store_model)
-
+После запуска сервера, заходим в ReDoc по ссылке:
+```url
+http://127.0.0.1:8000/redoc/
+```
 
 ## Автор:
 - Василевский И.А.
