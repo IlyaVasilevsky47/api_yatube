@@ -34,7 +34,7 @@ python yatube_api/manage.py runserver
 
 ## Примеры запросов к API:
 ### url: http://127.0.0.1:8000/api/v1/posts/
-### GET запрос:
+#### GET запрос:
 ```json
 {
   "count": 123,
@@ -53,7 +53,7 @@ python yatube_api/manage.py runserver
 }
 ```
 
-### POST запрос:
+#### POST запрос:
 Входные данные:
 ```json
 {
@@ -74,6 +74,10 @@ python yatube_api/manage.py runserver
   "group": 0
 }
 ```
+
+## Документация:
+- [ReDoc](https://redocly.github.io/redoc/?url=https://github.com/IlyaVasilevsky47/api_yatube/blob/master/yatube_api/static/redoc.yaml#tag/store_model)
+
 
 ## Автор:
 - Василевский И.А.
