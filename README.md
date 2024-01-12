@@ -22,21 +22,19 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-4. Создаем базу данных. 
+4. Переходим в папку и создаем базу данных. 
 ```bash
-python yatube_api/manage.py migrate 
+cd yatube_api
+python manage.py migrate 
 ```
 
 5. Запускаем проект.
 ```bash
-python yatube_api/manage.py runserver 
+python manage.py runserver 
 ```
 
 ## Примеры запросов к API:
-### url:
-```url
-http://127.0.0.1:8000/api/v1/posts/
-```
+### url: http://127.0.0.1:8000/api/v1/posts/
 #### GET запрос:
 ```json
 {
