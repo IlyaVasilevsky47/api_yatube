@@ -96,4 +96,4 @@ http://127.0.0.1:8000/redoc/
 - Django REST Framework 3.12.4
   - Simple JWT 4.7.2
 - PyJWT 2.1.0
-- Djoser 2.2.2
+- Djoser 2.0.3
