@@ -1,4 +1,4 @@
-# api_yatube
+# api-yatube
 
 [![CI](https://github.com/IlyaVasilevsky47/api_yatube/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/IlyaVasilevsky47/api_yatube/actions/workflows/main.yml)
 
